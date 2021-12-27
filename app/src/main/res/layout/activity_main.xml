@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/vp_first"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_above="@id/btn_skip"
+    >
+
+</androidx.viewpager.widget.ViewPager>
+<Button
+    android:id="@+id/btn_next"
+    android:textStyle="normal"
+    android:textSize="18sp"
+    android:textColor="#2D2B2E"
+    android:text="Next"
+    android:background="@null"
+    android:layout_marginBottom="70dp"
+    android:layout_marginEnd="40dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_finish"
+        android:visibility="gone"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="#2D2B2E"
+        android:text="Finish"
+        android:background="@null"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<Button
+    android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="40dp"
+    android:layout_marginBottom="70dp"
+android:text="Skip"
+    android:alpha="0.5"
+    android:textColor="#2D2B2E"
+    android:background="@null"
+    android:textSize="18sp"
+android:id="@+id/btn_skip"
+    />
+<LinearLayout
+    android:id="@+id/ok"
+    android:gravity="center"
+    android:layout_alignParentStart="true"
+   android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="70dp"/>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
